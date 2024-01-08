@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 1</title>
+  <style>
+     #box{
+        display: grid;
+        grid-template-areas: 
+        "rd rd pk or"
+        "be bl pk or"
+        ;
+        gap: 20px;
+     }
+     #box>div:nth-child(1){
+        background-color: red;
+        font-size: 20px;
+        grid-area:rd;
+        height: 100px; 
+     }
+     #box>div:nth-child(2){
+        background-color: pink;
+        font-size: 20px;
+        grid-area:pk; 
+        height: 200px; 
+     }
+     #box>div:nth-child(3){
+        background-color: blue;
+        font-size: 20px;
+        grid-area:be; 
+        height: 100px; 
+     }
+     #box>div:nth-child(4){
+        background-color: black;
+        font-size: 20px;
+        grid-area:bl; 
+        height: 100px; 
+     }
+     #box>div:nth-child(5){
+        background-color: orange;
+        font-size: 20px;
+        grid-area:or; 
+        height: 220px; 
+     }
+     
+  </style>
+</head>
+<body>
+    <div id="box">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+    </div>
+</body>
+</html>
