@@ -4,9 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="grid.css">
-</head>
+    <!-- <link rel="stylesheet" type="text/css" href="grid.css"> -->
+   <style>
+
+
+    #box{
+      width :100%;
+      display: grid;
+      /* grid-template-columns: 100px 100px;
+      grid-template-rows: 100px 100px 100px; */
+      grid-template-rows: 100px 100px 100px;
+      gap :20px;
+      grid-template-areas: 
+      "rd rd tw tw"
+      "three four four four"
+      "five five five five"
+      ;
+      text-align: center;
+      
+    }
+    #box>div:nth-child(1){
+      background-color: red;
+      font-size: 20px;
+      grid-area: rd;
+    }
+    #box>div:nth-child(2){
+      background-color: rgb(64, 53, 53);
+      font-size: 20px;
+      grid-area:tw;
+    }
+    #box>div:nth-child(3){
+      background-color: rgb(26, 218, 96);
+      font-size: 20px;
+      grid-area:three;
+    }
+    #box>div:nth-child(4){
+      background-color: rgb(127, 125, 132);
+      font-size: 20px;
+      grid-area: four;
+    }
+    #box>div:nth-child(5){
+      background-color: rgb(128, 44, 93);
+      font-size: 20px;
+      grid-area:five;
+    }
+    
+   </style>
+  </head>
+
 <body>
-  <h1>i am nitihs</h1>
+
+    <div id="box">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+    </div>
+
+
 </body>
 </html>
