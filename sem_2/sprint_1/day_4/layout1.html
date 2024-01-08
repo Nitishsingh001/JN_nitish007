@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout1</title>
+    <style>
+    #box{
+        display: grid;
+        grid-template-areas: 
+        "yw yw"
+        "rd gn"
+        ;
+        gap:20px;
+    }
+     #box>div:nth-child(1){
+      background-color: yellow;
+      font-size: 30px;
+      grid-area: yw;
+      height: 100px;
+     }
+    
+     #box>div:nth-child(2){
+      background-color: red;
+      font-size: 30px;
+      grid-area: rd;
+      height: 300px;
+     }
+    
+     #box>div:nth-child(3){
+      background-color: green;
+      font-size: 30px;
+      grid-area: gn;
+      height: 300px;
+     }
+   
+
+     @media all and (min-width: 310px) and (max-width: 770px) {
+        /* write medium screen code here */
+        #box{
+        display: grid;
+        grid-template-areas: 
+        "yw"
+        "rd"
+        "gn"
+        ;
+        gap:20px;
+    }
+        
+
+
+/* 
+        #box>div:nth-child(1){
+      background-color: yellow;
+      font-size: 30px;
+      grid-area: yw;
+      height: 100px;
+     }
+    
+     #box>div:nth-child(2){
+      background-color: red;
+      font-size: 30px;
+      grid-area: rd;
+      height: 300px;
+     }
+    
+     #box>div:nth-child(3){
+      background-color: green;
+      font-size: 30px;
+      grid-area: gn;
+      height: 300px;
+     } */
+   
+    }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div>Navigation</div>
+        <div>Left Box</div>
+        <div>Right Box</div>
+    </div>
+
+
+
+</body>
+</html>
