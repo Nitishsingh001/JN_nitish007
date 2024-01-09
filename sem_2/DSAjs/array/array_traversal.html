@@ -14,7 +14,12 @@
            function getElement(){
             let el  = document.getElementById("element").value; 
            let disp = document.getElementById("display"); 
-            disp.innerText = array[el]; 
+         
+            if(el< array.length && typeof parseInt(el) === "number"){
+                   disp.innerText = array[el]; 
+            } else {
+                disp.innerText = "Please enter correct index"; 
+            }
            }
 
     </script>
