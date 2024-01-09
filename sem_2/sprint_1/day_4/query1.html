@@ -19,7 +19,16 @@
         justify-content: space-evenly;
         
      }
-     #top>img{
+     #top>div{
+           width: 80%;
+       
+        margin:auto;
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:20px; 
+        justify-content: space-evenly;
+     }
+     #top>div>img{
         box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
         margin-bottom: 40px;   
     }
@@ -38,16 +47,67 @@
         width: 20%;
      }
 
+
+     
+     @media all and (min-width: 760px) and (max-width: 1024px) {
+        /* write medium screen code here */
+       
+   #top{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: space-evenly;
+       align-items: center;
+   }
+
+
+    #box{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:40px;
+        text-align: center;
+     }
+
+    }
+        
+     @media all and (min-width: 320px) and (max-width: 769px) {
+        /* write small screen code here */
+   
+        #top{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: space-evenly;
+      
+   }
+
+  
+   #box{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap:40px;
+        text-align: center;
+     }
+        
+    }
+        
+
     </style>
 </head>
 <body>
     <h1>Board Members</h1>
     <div id="top">
 
-        <img src="https://www.masaischool.com/images/our-investors/india-q-borderless.svg" alt="">
-        <img src="https://www.masaischool.com/images/our-investors/india-q-borderless.svg" alt="">
-        <img src="https://www.masaischool.com/images/our-investors/india-q-borderless.svg" alt="">
-    
+        <div> <img src="https://www.masaischool.com/images/our-investors/india-q-borderless.svg" alt=""></div>
+        <div> <img src="https://www.masaischool.com/images/our-investors/india-q-borderless.svg" alt=""></div>
+        <div> <img src="https://www.masaischool.com/images/our-investors/india-q-borderless.svg" alt=""></div>
+        
     </div>
     
 
